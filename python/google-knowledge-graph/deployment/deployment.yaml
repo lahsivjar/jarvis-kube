@@ -11,7 +11,7 @@ spec:
     spec:
       containers:
       - name: jarvis-kube-py-helloworld
-        image: lahsivjar/jarvis-goog-knowledge-graph:latest
+        image: lahsivjar/jarvis-google-knowledge-graph:latest
         env:
         - name: GOOG_KNOWLEDGE_GRAPH_API_KEY
           value: {{ google_knowledge_graph_api_key }}
