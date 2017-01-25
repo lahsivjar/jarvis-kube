@@ -1,0 +1,19 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: py-helloworld
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        run: py-helloworld
+    spec:
+      containers:
+      - name: jarvis-kube-py-helloworld
+        image: lahsivjar/jarvis-goog-knowledge-graph:latest
+        env:
+        - name: GOOG_KNOWLEDGE_GRAPH_API_KEY
+          value: {{ google_knowledge_graph_api_key }}
+        ports:
+        - containerPort: 8080
