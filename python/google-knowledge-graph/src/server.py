@@ -1,9 +1,9 @@
-from app import app
+from controller import mapping
 
 import cherrypy
 
 if __name__ == '__main__':
-    cherrypy.tree.graft(app, "/module/helloworld/")
+    cherrypy.tree.graft(mapping, "/module/googknowledge")
 
     cherrypy.server.unsubscribe()
 
