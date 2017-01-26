@@ -1,5 +1,6 @@
 import queryclient
 import utility
+import responsebuilder
 
 from flask import Flask
 from flask import request
@@ -15,9 +16,9 @@ def describe():
   query = request.args.get('query')
   try:
     result = utility.get_first_result(queryclient.do(query, 1))
-    return utility.get_article_body_from_result(result)
+    return responsebuilder.build_msg(utility.get_article_body_from_result(result))
   except NoResultFound as e:
-    return e.value
+    return responsebuilder.build_msg(e.value)
 
 if __name__ == "__main__":
     mapping.run()
