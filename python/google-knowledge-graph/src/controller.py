@@ -10,8 +10,8 @@ mapping = Flask(__name__)
 
 # This method will return a detailed description of the query as per 
 # the first search result
-@mapping.route("/v1/get/description", methods=['GET'])
-def get_desciption():
+@mapping.route("/v1/describe", methods=['GET'])
+def describe():
   query = request.args.get('query')
   try:
     result = utility.get_first_result(queryclient.do(query, 1))
