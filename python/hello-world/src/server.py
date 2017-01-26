@@ -3,7 +3,7 @@ from app import app
 import cherrypy
 
 if __name__ == '__main__':
-    cherrypy.tree.graft(app, "/module/helloworld/")
+    cherrypy.tree.graft(app, "/module/py/helloworld")
 
     cherrypy.server.unsubscribe()
 
