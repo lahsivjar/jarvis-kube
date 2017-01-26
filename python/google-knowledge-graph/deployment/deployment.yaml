@@ -1,16 +1,16 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: py-helloworld
+  name: goog-knowledge-graph
 spec:
   replicas: 2
   template:
     metadata:
       labels:
-        run: py-helloworld
+        run: goog-knowledge-graph
     spec:
       containers:
-      - name: jarvis-kube-py-helloworld
+      - name: jarvis-google-knowledge-graph
         image: lahsivjar/jarvis-google-knowledge-graph:latest
         env:
         - name: GOOG_KNOWLEDGE_GRAPH_API_KEY
