@@ -1,0 +1,11 @@
+---
+service_id: goog-knowledge-graph
+service_name: 'Knowledge Graph API'
+service_port: 8080
+namespace: default
+endpoints:
+  - uri: /module/googknowledge/v1/describe
+    acceptance_regex: '^describe'
+    filter_regex:
+      pattern: '^describe '
+      repl: ''

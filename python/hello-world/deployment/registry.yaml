@@ -1,0 +1,8 @@
+---
+service_id: py-helloworld
+service_name: 'Hello World'
+service_port: 8080
+namespace: default
+endpoints:
+  - uri: /module/py/helloworld/
+    acceptance_regex: '^helloworld$'
