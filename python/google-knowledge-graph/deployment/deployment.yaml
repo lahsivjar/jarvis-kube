@@ -14,6 +14,6 @@ spec:
         image: lahsivjar/jarvis-google-knowledge-graph:latest
         env:
         - name: GOOG_KNOWLEDGE_GRAPH_API_KEY
-          value: {{ google_knowledge_graph_api_key }}
+          value: '{{ google_knowledge_graph_api_key }}'
         ports:
         - containerPort: 8080
