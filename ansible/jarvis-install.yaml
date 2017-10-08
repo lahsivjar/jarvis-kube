@@ -3,7 +3,7 @@
   hosts: jarvis-kube-master
   vars:
     system_module_namespace: jarvis-system
-    system_module_path: ../../essentials/jarvis-system/
+    system_module_path: jarvis-system/
   tasks:
   - name: "Create namespace"
     command: "kubectl create namespace {{ system_module_namespace }}"
