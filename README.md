@@ -1,6 +1,6 @@
 # jarvis-kube
 
-Jarvis Kube is a framework built on top of kubernetes cluster using arm machines as nodes that provides developers to write modules in any language that can perform tasks, automate day to day processes, play your preferred music, connect to third party apps... the sky is the limit as to what you can do.
+Jarvis Kube is a framework built on top of kubernetes cluster using arm machines as nodes that provides developers to write modules that can perform tasks, automate day to day processes, play your preferred music, connect to third party apps... the sky is the limit as to what can be done.
 
 ## How it works
 
